@@ -22,15 +22,21 @@ export default class Example extends React.Component {
     return (
       <div>
         <Navbar color="faded" light>
-          <NavbarBrand href="/" className="mr-auto">PLANNER</NavbarBrand>
+          <NavbarBrand href="/" className="mr-auto">Plan List</NavbarBrand>
           <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
           <Collapse isOpen={!this.state.collapsed} navbar>
             <Nav navbar>
               <NavItem>
-              <Link to="/" className="list-item">Home</Link>
-              </NavItem>
-              <NavItem>
               <Link to="/calender" className="list-item">Calender</Link>
+                </NavItem>
+                <NavItem>
+                <Link to="/create" className="list-item">Create new</Link>
+                </NavItem>
+                <NavItem>
+                <Link to="/contact" className="list-item">Contact info</Link>
+                </NavItem>
+                <NavItem>
+                <Link to="/map" className="list-item">Map</Link>
                 </NavItem>
             </Nav>
           </Collapse>

@@ -1,54 +1,46 @@
 import BigCalendar from "react-big-calendar";
 import React, { Component } from 'react'
-import withDragAndDrop from "react-big-calendar/lib/addons/dragAndDrop";
 import moment from 'moment';
-import "react-big-calendar/lib/addons/dragAndDrop/styles.css";
 import "react-big-calendar/lib/css/react-big-calendar.css";
+import axios from 'axios';
 
-
-const DragAndDropCalendar = withDragAndDrop(BigCalendar);
 const localizer = BigCalendar.momentLocalizer(moment);
 
 class Calendar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      events: [
-        {
-          start: new Date(),
-          end: new Date(),
-          title: "Some title",
-          id: 1,
-          allDay: false
-        }
-      ]
+      events: []
     };
-    this.onEventDrop = this.onEventDrop.bind(this);
-    this.onEventResize = this.onEventResize.bind(this);
+  }
+  convertDate = (date) => {
+    return moment.utc(date).toDate()
   }
 
-  onEventResize({ event, start, end }) {
-    const { events } = this.state;
-    const nextEvents = events.map(existingEvent => {
-      return existingEvent.id === event.id
-        ? { ...existingEvent, start, end }
-        : existingEvent;
-    });
 
-    this.setState({
-      events: nextEvents
-    });
-  }
+  componentDidMount() {
 
-  onEventDrop({ event, start, end }) {
-    const { events } = this.state;
-    const idx = events.indexOf(event);
-    const updatedEvent = { ...event, start, end };
-    const nextEvents = [...events];
-    nextEvents.splice(idx, 1, updatedEvent);
-    this.setState({
-      events: nextEvents
-    });
+
+    axios.get('http://localhost:4000/Plan')
+      .then(response => {
+        console.log(response.data);
+        let plan = response.data;
+        
+        for (let i = 0; i < plan.length; i++) {
+          
+          plan[i].start = this.convertDate(plan[i].start)
+          plan[i].end = this.convertDate(plan[i].end)
+          
+        }
+
+        this.setState({
+          events:plan
+        })
+  
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   }
 
   onSlotChange(slotInfo) {
@@ -56,7 +48,9 @@ class Calendar extends Component {
     var endDate = moment(slotInfo.end.toLocaleString()).format("YYYY-MM-DD HH:mm:ss");
     console.log('startTime', startDate); //shows the start time chosen
     console.log('endTime', endDate); //shows the end time chosen
-}
+  }
+
+
 
 onEventClick(event) {
   console.log(event) //Shows the event details provided while booking
@@ -66,7 +60,7 @@ onEventClick(event) {
     const { events } = this.state;
     return (
       <div>
-        <DragAndDropCalendar
+        <BigCalendar
           selectable
           onSelectEvent={event => this.onEventClick(event)}
           onSelectSlot={slotInfo => this.onSlotChange(slotInfo)}
@@ -79,8 +73,6 @@ onEventClick(event) {
           startAccessor="start"
           endAccessor="end"
           titleAccessor="title"
-          onEventResize={this.onEventResize}
-          onEventDrop={this.onEventDrop}
           resizable={true}
         />
       </div>
