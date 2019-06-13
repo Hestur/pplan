@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 
+
 class Contact extends Component {
   render() {
     return (
       <main className="main">
-
-        <section className="kontakt">
+        <section className="info">
           <div className="åbningstider">
             <h4>Office phone hours</h4>
             <p>Mon-Fri: 8:00-18:00</p>
@@ -15,7 +15,7 @@ class Contact extends Component {
           </div>
           <div className="adresse">
             <h4>Find os</h4>
-            <br/>
+            <br />
             <div className="aarhus">
               <h5>Århus</h5>
               <p>Adresse: hestevejen 20</p>
@@ -47,7 +47,6 @@ class Contact extends Component {
           </div>
         </section>
       </main>
-      
     );
   }
 }

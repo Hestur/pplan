@@ -31,9 +31,49 @@ main section {
 
   display: grid;
 }
+
 /* Kontakt---------------------------- */
-.kontakt {
+.info {
   background-color: whitesmoke;
+}
+.rules {
+  background-color: whitesmoke;
+  justify-content: center;
+  padding: 110px;
+}
+.rules h2 {
+  padding: 20px;
+  font-size: 1.9rem;
+}
+.borger {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.1rem;
+}
+.pårørende {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.1rem;
+}
+.kommuner {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.1rem;
+}
+.døgnåbent{
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.1rem;
+}
+.fasthjemmehjælp{
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.1rem;
+}
+.fastbesøgstid{
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.1rem;
 }
 .åbningstider {
   line-height: 5rem;
@@ -61,10 +101,6 @@ main section {
 
 /* MAP------------------ */
 .MapComponent {
-  background-color: whitesmoke;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  background-color: #343a40;
+  height: 91vh;
 }

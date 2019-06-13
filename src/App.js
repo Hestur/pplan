@@ -9,6 +9,7 @@ import PlanList from './Components/Plan/PlanList';
 import DeletePlan from './Components/Plan/DeletePlan';
 import Contact from './Components/Contact/Contact';
 import Map from './Components/Contact/Map';
+import Guide from './Components/Guidelines/Guidelines';
 
 export default class App extends Component{
   render() {
@@ -26,6 +27,7 @@ export default class App extends Component{
 <Route path="/edit/:id" component={EditPlan} />
 <Route path="/delete/:id" component={DeletePlan} />
 <Route path="/map" component={Map}/>
+<Route path="/guide" component={Guide}/>
 
 {/* <Route path="/info" component={Info}/> */}
 {/* <AppFooter /> */}

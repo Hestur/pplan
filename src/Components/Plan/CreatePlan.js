@@ -81,7 +81,7 @@ export default class CreatePlan extends Component {
             <input
               type="text"
               className="form-control"
-              value={this.state.start}
+              value={this.state.start.toISOstring}
               onChange={this.onChangeStart}
             />
           </div>
@@ -90,7 +90,7 @@ export default class CreatePlan extends Component {
             <input
               type="text"
               className="form-control"
-              value={this.state.end}
+              value={this.state.end.toISOstring}
               onChange={this.onChangeEnd}
             />
           </div>

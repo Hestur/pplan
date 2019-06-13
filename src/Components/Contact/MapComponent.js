@@ -17,7 +17,7 @@ class MapComponent extends React.Component {
   }
 
   render() {
-    const styles = { height: "75%", width: "75%" };
+    const styles = { height: "100%", width: "100%" };
     return <div style={styles} ref={this.setMapRef} />;
   }
 

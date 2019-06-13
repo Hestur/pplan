@@ -5,7 +5,7 @@ import {fromLonLat} from 'ol/proj.js';
 
 const LocationsSelect = (props) => {
     const locations = props.locations.map((item, index) => 
-    <option key={index} value={item.coords} className="dd-locations">{item.name}</option>
+    <option key={index} value={item.coords} className="dd-locations">{item.name} </option>
     );
     return(
         <div>
@@ -43,7 +43,7 @@ const LocationsSelect = (props) => {
     }
   render(){
       return(
-          <div>
+          <div className="MapComponent">
           <LocationsSelect locations={this.locations} onSelectLocation={this.panToLocation}/>
           <MapComponent currentLocation={this.state.currentLocation}/>
           </div>

@@ -21,7 +21,7 @@ export default class Example extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="faded" light>
+        <Navbar color="dark" dark>
           <NavbarBrand href="/" className="mr-auto">Plan List</NavbarBrand>
           <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
           <Collapse isOpen={!this.state.collapsed} navbar>
@@ -30,13 +30,16 @@ export default class Example extends React.Component {
               <Link to="/calender" className="list-item">Calender</Link>
                 </NavItem>
                 <NavItem>
-                <Link to="/create" className="list-item">Create new</Link>
+                <Link to="/create" className="list-item">Create new appoinment</Link>
                 </NavItem>
                 <NavItem>
                 <Link to="/contact" className="list-item">Contact info</Link>
                 </NavItem>
                 <NavItem>
                 <Link to="/map" className="list-item">Map</Link>
+                </NavItem>
+                <NavItem>
+                <Link to="/guide" className="list-item">Rules</Link>
                 </NavItem>
             </Nav>
           </Collapse>
