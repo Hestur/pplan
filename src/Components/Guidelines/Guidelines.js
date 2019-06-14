@@ -1,9 +1,11 @@
 import React, { Component } from "react";
+import oldman from './gammel.jpg'
 
 export default class Guide extends Component {
   render() {
     return (
       <main className="main">
+            <img src={oldman} alt="oldman" className="oldman"/>
         <section className="rules">
         <h2>Regler i hjemmeplejen</h2>
             <div className="borger">

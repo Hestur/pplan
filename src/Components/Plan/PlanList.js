@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-
+import img1 from './Modelfoto.jpg';
+import img2 from './slider1.jpg';
 
 const Plan = props => (
   <tr>
@@ -57,6 +58,8 @@ export default class PlanList extends Component {
           </thead>
           <tbody>{this.planList()}</tbody>
         </table>
+<img src={img2} alt="img2" className="img2"/>
+<img src={img1} alt="img1" className="img1"/>
       </div>
     );
   }

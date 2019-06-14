@@ -79,7 +79,7 @@ export default class CreatePlan extends Component {
           <div className="form-group">
             <label>Date & Time Start: </label>
             <input
-              type="text"
+              type="datetime-local"
               className="form-control"
               value={this.state.start.toISOstring}
               onChange={this.onChangeStart}
@@ -88,7 +88,7 @@ export default class CreatePlan extends Component {
           <div className="form-group">
             <label>Date & Time End: </label>
             <input
-              type="text"
+              type="datetime-local"
               className="form-control"
               value={this.state.end.toISOstring}
               onChange={this.onChangeEnd}

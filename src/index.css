@@ -36,6 +36,37 @@ main section {
 .info {
   background-color: whitesmoke;
 }
+.åbningstider {
+  line-height: 5rem;
+  padding: 100px;
+  margin: 10px;
+  font-size: 1.3rem;
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+.adresse {
+  padding: 100px;
+  margin: 10px;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  font-size: 1rem;
+}
+.links {
+  line-height: 10rem;
+  padding: 100px;
+  font-size: 1.5rem;
+  margin: 10px;
+  grid-row: 2/3;
+  grid-column: 4/5;
+}
+
+/* MAP------------------ */
+.MapComponent {
+  background-color: #343a40;
+  height: 91vh;
+}
+
+/* Rules ------------------ */
 .rules {
   background-color: whitesmoke;
   justify-content: center;
@@ -44,6 +75,10 @@ main section {
 .rules h2 {
   padding: 20px;
   font-size: 1.9rem;
+}
+.oldman{
+  height: 700px;
+  width: 100%;
 }
 .borger {
   padding: 10px;
@@ -75,32 +110,17 @@ main section {
   margin: 10px;
   font-size: 1.1rem;
 }
-.åbningstider {
-  line-height: 5rem;
-  padding: 100px;
-  margin: 10px;
-  font-size: 1.3rem;
-  grid-row: 2/3;
-  grid-column: 3/4;
-}
-.adresse {
-  padding: 100px;
-  margin: 10px;
-  grid-row: 2/3;
-  grid-column: 1/2;
-  font-size: 1rem;
-}
-.links {
-  line-height: 10rem;
-  padding: 100px;
-  font-size: 1.5rem;
-  margin: 10px;
-  grid-row: 2/3;
-  grid-column: 4/5;
-}
 
-/* MAP------------------ */
-.MapComponent {
-  background-color: #343a40;
-  height: 91vh;
+/* Planlist --------------- */
+.img1{
+width: 800px;
+height: 500px;
+padding: 0px;
+margin: 0px;
+}
+.img2{
+  width: 1103px;
+  height: 500px;
+  padding: 0px;
+  margin: 0px;
 }
