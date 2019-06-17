@@ -1,5 +1,10 @@
 import React, { Component } from "react";
 import axios from 'axios';
+import pic1 from './Boomerly.jpg'
+import pic2 from './download.jpg'
+import pic3 from './carepic.jpg'
+import pic4 from './care.jpg'
+// import pic5 from './images.jpg'
 
 export default class CreatePlan extends Component {
   constructor(props) {
@@ -121,7 +126,14 @@ export default class CreatePlan extends Component {
             />
           </div>
         </form>
+        <img src={pic1} alt="" className="pic1"/>
+        <img src={pic2} alt="" className="pic2"/>
+        <img src={pic3} alt="" className="pic3"/>
+        <img src={pic4} alt="" className="pic4"/>
+        {/* <img src={pic5} alt="" className="pic5"/> */}
       </div>
+     
+      
     );
   }
 }
