@@ -6,12 +6,14 @@ export default class EditPlan extends Component {
     super(props);
 
     this.onChangeTitle = this.onChangeTitle.bind(this);
+    this.onChangeDescription = this.onChangeDescription.bind(this);
     this.onChangeStart = this.onChangeStart.bind(this);
     this.onChangeEnd = this.onChangeEnd.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
 
     this.state = {
       title: String,
+      description: String,
       start: { type: Date },
       end: { type: Date}
   };
@@ -23,6 +25,7 @@ export default class EditPlan extends Component {
       .then(response => {
         this.setState({
           title: response.data.title,
+          description: response.data.description,
           start: response.data.start,
           end: response.data.end
         });
@@ -37,7 +40,11 @@ export default class EditPlan extends Component {
       title: e.target.value
     });
   }
-
+  onChangeDescription(e) {
+    this.setState({
+      description: e.target.value
+    });
+  }
   onChangeStart(e) {
     this.setState({
       start: e.target.value
@@ -53,6 +60,7 @@ export default class EditPlan extends Component {
     e.preventDefault();
     const obj = {
       title: this.state.title,
+      description: this.state.description,
       start: this.state.start,
       end: this.state.end
     };
@@ -79,6 +87,15 @@ export default class EditPlan extends Component {
               className="form-control"
               value={this.state.title}
               onChange={this.onChangeTitle}
+            />
+          </div>
+          <div className="form-group">
+            <label>Description: </label>
+            <input
+              type="text"
+              className="form-control"
+              value={this.state.description}
+              onChange={this.onChangeDescription}
             />
           </div>
           <div className="form-group">

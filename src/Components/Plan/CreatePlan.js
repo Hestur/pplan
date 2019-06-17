@@ -6,12 +6,14 @@ export default class CreatePlan extends Component {
     super(props);
 
     this.onChangeTitle = this.onChangeTitle.bind(this);
+    this.onChangeDescription = this.onChangeDescription.bind(this);
     this.onChangeStart = this.onChangeStart.bind(this);
     this.onChangeEnd = this.onChangeEnd.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
 
     this.state = {
         title: String,
+        description: String,
         start: { type: Date, default: new Date() },
         end: {type: Date, default: new Date()},
         id: Math.floor(Math.random()*1000)
@@ -20,6 +22,11 @@ export default class CreatePlan extends Component {
   onChangeTitle(e) {
     this.setState({
       title: e.target.value
+    });
+  }
+  onChangeDescription(e) {
+    this.setState({
+      description: e.target.value
     });
   }
   onChangeStart(e) {
@@ -38,14 +45,16 @@ export default class CreatePlan extends Component {
 
     console.log(`Form submitted:`);
     console.log(`Title: ${this.state.title}`);
+    console.log(`Description: ${this.state.description}`);
     console.log(`Start: ${this.state.start}`);
     console.log(`End: ${this.state.end}`);
   
 
     const newPlan = {
-     title: this.state.title,
-      start: this.state.start,
-      end: this.state.end
+    title: this.state.title,
+    description: this.state.description,
+    start: this.state.start,
+    end: this.state.end
     }
 
     axios.post('http://localhost:4000/Plan/add', newPlan)
@@ -56,6 +65,7 @@ export default class CreatePlan extends Component {
 
     this.setState({
       title: "",
+      description: "",
       start: "",
       end: "",
       id: ""
@@ -74,6 +84,15 @@ export default class CreatePlan extends Component {
               className="form-control"
               value={this.state.title}
               onChange={this.onChangeTitle}
+            />
+          </div>
+          <div className="form-group">
+            <label>Description: </label>
+            <input
+              type="text"
+              className="form-control"
+              value={this.state.description}
+              onChange={this.onChangeDescription}
             />
           </div>
           <div className="form-group">

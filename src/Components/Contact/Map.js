@@ -30,16 +30,3 @@ export default class Map extends Component {
     );
   }
 }
-
-//   render() {
-//     return (
-//       <ReactMapGL
-//       mapStyle='mapbox://styles/hestur/cjx0441vd0w8d1cpkhqr94mzq'
-//         {...this.state.viewport}
-//         onViewportChange={(viewport) => this.setState({viewport})}
-//         mapboxApiAccessToken={'pk.eyJ1IjoiaGVzdHVyIiwiYSI6ImNqeDAzN3c2dDBjbWg0OW51eXV5OWwzb2cifQ.HyZ-qFVe7tTQad9jX2CRbw'}
-
-//       />
-//     );
-//   }
-// }
