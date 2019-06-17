@@ -1,51 +1,45 @@
 import React, {Component} from 'react';
-import MapComponent from './MapComponent';
-import {fromLonLat} from 'ol/proj.js';
+import ReactMapGL,{NavigationControl} from 'react-map-gl';
 
+export default class Map extends Component {
 
-const LocationsSelect = (props) => {
-    const locations = props.locations.map((item, index) => 
-    <option key={index} value={item.coords} className="dd-locations">{item.name} </option>
-    );
-    return(
-        <div>
-             <select onChange={props.onSelectLocation}>
-                {locations}
-            </select>
+  state = {
+    viewport: {
+      width: 1920,
+      height: 880,
+      latitude: 56.155998,
+      longitude: 10.210101,
+      zoom: 5
+    }
+  };
+
+  render() {
+    const {viewport} = this.state;
+    return (
+      <ReactMapGL {...viewport}
+      mapStyle='mapbox://styles/hestur/cjx0441vd0w8d1cpkhqr94mzq'
+        width="1920px"
+        height="94vh"
+        onViewportChange={viewport => this.setState({viewport})}
+        mapboxApiAccessToken={'pk.eyJ1IjoiaGVzdHVyIiwiYSI6ImNqeDAzN3c2dDBjbWg0OW51eXV5OWwzb2cifQ.HyZ-qFVe7tTQad9jX2CRbw'}>
+        <div style={{position: 'absolute', right: 0}}>
+          <NavigationControl />
         </div>
-    )
+      </ReactMapGL>
+      
+    );
   }
-  
-  
-  
-  export default class Map extends Component {
-    constructor () {
-      super();
-      this.locations = [
-        {name: 'Kannikegade', coords: fromLonLat([10.210101, 56.155998])},
-        {name: 'København', coords: fromLonLat([12.568337, 55.676098])},
-        {name: 'Berlin', coords: fromLonLat([13.404954, 52.520008])}
-      ]
-      this.state = {
-        currentLocation : fromLonLat([10.210101, 56.155998])
-      }
-      this.panToLocation = this.panToLocation.bind(this);
-    }
-  
-    panToLocation(e) {
-      const selectedIndex = e.target.selectedOptions[0].index;
-      const selectedLocation = this.locations[selectedIndex].coords;
-      this.setState(() => {
-        return {
-          currentLocation : selectedLocation
-        }
-      });
-    }
-  render(){
-      return(
-          <div className="MapComponent">
-          <LocationsSelect locations={this.locations} onSelectLocation={this.panToLocation}/>
-          <MapComponent currentLocation={this.state.currentLocation}/>
-          </div>
-  )
-  }}
+}
+
+//   render() {
+//     return (
+//       <ReactMapGL
+//       mapStyle='mapbox://styles/hestur/cjx0441vd0w8d1cpkhqr94mzq'
+//         {...this.state.viewport}
+//         onViewportChange={(viewport) => this.setState({viewport})}
+//         mapboxApiAccessToken={'pk.eyJ1IjoiaGVzdHVyIiwiYSI6ImNqeDAzN3c2dDBjbWg0OW51eXV5OWwzb2cifQ.HyZ-qFVe7tTQad9jX2CRbw'}
+
+//       />
+//     );
+//   }
+// }
