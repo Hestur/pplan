@@ -23,9 +23,9 @@ export default class App extends Component{
         
         <BrowserRouter>
 <Route exact path="/" component={Frontpage}/>
+<Header/>
 <Route path="/reviews" component={Review}/>
 <Route path="/pricing" component={PriceTypes}/>
-<Header/>
 <Route path="/contact" component={Contact}/>
 <Route path="/list" component={PlanList}/>
 <Route path="/calender" component={CalendarApp}/>
@@ -34,9 +34,6 @@ export default class App extends Component{
 <Route path="/delete/:id" component={DeletePlan} />
 <Route path="/map" component={Map}/>
 <Route path="/guide" component={Guide}/>
-
-{/* <Route path="/info" component={Info}/> */}
-{/* <AppFooter /> */}
 </BrowserRouter>
 
       </div>

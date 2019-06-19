@@ -35,7 +35,7 @@ export default class Frontpage extends React.Component {
                 <span className="navbar-caption-wrap">
                   <a
                     className="navbar-caption text-secondary display-2"
-                    href="http://localhost:3000"
+                    href="http://localhost:3000/"
                   >
                     HomeCare
                   </a>
@@ -53,7 +53,7 @@ export default class Frontpage extends React.Component {
                 <li className="nav-item">
                   <a
                     className="nav-link link text-white display-4"
-                    href="https://localhost:3000/list"
+                    href="http://localhost:3000/list"
                   >
                     <span className="mbri-numbered-list mbr-iconfont mbr-iconfont-btn" />
                     List &nbsp; &nbsp;&nbsp;
@@ -62,7 +62,7 @@ export default class Frontpage extends React.Component {
                 <li className="nav-item">
                   <a
                     className="nav-link link text-white display-4"
-                    href="https://localhost:3000/calender"
+                    href="http://localhost:3000/calender"
                   >
                     <span className="mbri-calendar mbr-iconfont mbr-iconfont-btn" />
                     Kalender{" "}
@@ -71,7 +71,7 @@ export default class Frontpage extends React.Component {
                 <li className="nav-item">
                   <a
                     className="nav-link link text-white display-4"
-                    href="https://localhost:3000/create"
+                    href="http://localhost:3000/create"
                   >
                     <span className="mbri-edit mbr-iconfont mbr-iconfont-btn" />
                     Opret ny &nbsp; &nbsp;&nbsp;
@@ -80,7 +80,7 @@ export default class Frontpage extends React.Component {
                 <li className="nav-item">
                   <a
                     className="nav-link link text-white display-4"
-                    href="https://localhost:3000/contact"
+                    href="http://localhost:3000/contact"
                   >
                     <span className="mbri-search mbr-iconfont mbr-iconfont-btn" />
                     Find os &nbsp; &nbsp;&nbsp;
@@ -89,7 +89,7 @@ export default class Frontpage extends React.Component {
                 <li className="nav-item">
                   <a
                     className="nav-link link text-white display-4"
-                    href="https://localhost:3000/map"
+                    href="http://localhost:3000/map"
                   >
                     <span className="mbri-map-pin mbr-iconfont mbr-iconfont-btn" />
                     Kort &nbsp; &nbsp;&nbsp;
@@ -98,7 +98,7 @@ export default class Frontpage extends React.Component {
                 <li className="nav-item">
                   <a
                     className="nav-link link text-white display-4"
-                    href="https://localhost:3000/reviews"
+                    href="http://localhost:3000/reviews"
                   >
                     <span className="mbri-cust-feedback mbr-iconfont mbr-iconfont-btn" />
                     Anmeldelser{" "}
@@ -107,7 +107,7 @@ export default class Frontpage extends React.Component {
                 <li className="nav-item">
                   <a
                     className="nav-link link text-white display-4"
-                    href="https://localhost:3000/guide"
+                    href="http://localhost:3000/guide"
                   >
                     <span className="mbri-like mbr-iconfont mbr-iconfont-btn" />
                     Regler &nbsp; &nbsp;&nbsp;
@@ -116,7 +116,7 @@ export default class Frontpage extends React.Component {
                 <li className="nav-item">
                   <a
                     className="nav-link link text-white display-4"
-                    href="https://localhost:3000/pricing"
+                    href="http://localhost:3000/pricing"
                   >
                     <span className="mbri-shopping-bag mbr-iconfont mbr-iconfont-btn" />
                     Vi tilbyder/priser 
