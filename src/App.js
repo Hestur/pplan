@@ -10,6 +10,9 @@ import DeletePlan from './Components/Plan/DeletePlan';
 import Contact from './Components/Contact/Contact';
 import Map from './Components/Contact/Map';
 import Guide from './Components/Guidelines/Guidelines';
+import Frontpage from './Components/Frontpage/Frontpage';
+import Review from './Components/Reviews/Review';
+import PriceTypes from './Components/Priser/PriceTypes';
 
 export default class App extends Component{
   render() {
@@ -19,9 +22,12 @@ export default class App extends Component{
       <div>
         
         <BrowserRouter>
+<Route exact path="/" component={Frontpage}/>
+<Route path="/reviews" component={Review}/>
+<Route path="/pricing" component={PriceTypes}/>
 <Header/>
-<Route exact path="/" component={PlanList}/>
 <Route path="/contact" component={Contact}/>
+<Route path="/list" component={PlanList}/>
 <Route path="/calender" component={CalendarApp}/>
 <Route path="/create" component={CreatePlan} />
 <Route path="/edit/:id" component={EditPlan} />

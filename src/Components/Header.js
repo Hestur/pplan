@@ -27,7 +27,10 @@ export default class Example extends React.Component {
           <Collapse isOpen={!this.state.collapsed} navbar>
             <Nav navbar>
             <NavItem>
-                <Link to="/" className="list-item">List</Link>
+                <Link to="/" className="list-item">Front page</Link>
+                </NavItem>
+            <NavItem>
+                <Link to="/list" className="list-item">List</Link>
                 </NavItem>
               <NavItem>
               <Link to="/calender" className="list-item">Calender</Link>
@@ -43,6 +46,12 @@ export default class Example extends React.Component {
                 </NavItem>
                 <NavItem>
                 <Link to="/guide" className="list-item">Rules</Link>
+                </NavItem>
+                <NavItem>
+                <Link to="/reviews" className="list-item">Anmeldelser</Link>
+                </NavItem>
+                <NavItem>
+                <Link to="/pricing" className="list-item">Typer/Priser</Link>
                 </NavItem>
             </Nav>
           </Collapse>
