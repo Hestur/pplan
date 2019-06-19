@@ -26,11 +26,11 @@ Restart project + editor
 
 Open Server folder + terminal: scoped like (PPlan/server) and type "nodemon server" in terminal
 this should respond with something like: 
-[nodemon] 1.19.1
-[nodemon] to restart at any time, enter `rs`
-[nodemon] watching: *.*
-[nodemon] starting `node server.js`
-server is running on port: 4000
+[nodemon] 1.19.1 <br>
+[nodemon] to restart at any time, enter `rs` <br>
+[nodemon] watching: *.* <br>
+[nodemon] starting `node server.js` <br>
+server is running on port: 4000 <br>
 MongoDB database connection established :)
 
 Now we got connection to the backend...(do not close or exit)
