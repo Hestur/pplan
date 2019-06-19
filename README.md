@@ -6,6 +6,8 @@ How to install and run the project:
 Download or clone project folder: https://github.com/Hestur/pplan
 Download or clone server folder: https://github.com/Hestur/Server
 
+If not already using node - download it: https://nodejs.org/en/download/
+
 create new folder (PPlan)
 Place them as follows:
 (PPlan)
