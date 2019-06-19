@@ -13,8 +13,6 @@ The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
 
-
-
 How to install and run the project:
 
 Download or clone project folder: https://github.com/Hestur/pplan
@@ -48,6 +46,10 @@ server is running on port: 4000
 MongoDB database connection established :)
 
 Now we got connection to the backend...(do not close or exit)
+(Database data will be empty untill you fill it in locally (create data from the /create component))
+
+
+
 
 Now start up the React app:
 Open folder pplan and terminal (PPlan/pplan) and type "npm start"
