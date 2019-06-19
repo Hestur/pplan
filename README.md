@@ -49,9 +49,6 @@ You can now view pplan in the browser.
   Local:            http://localhost:3000/
   On Your Network:  http://10.131.163.105:3000/
 
-Note that the development build is not optimized.
-To create a production build, use npm run build.
-
 Then a browser window will open the frontpage of the website and it will be running...
 
 
