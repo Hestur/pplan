@@ -7,6 +7,7 @@ import "./assets/bootstrap/css/bootstrap-reboot.min.css";
 import "./assets/dropdown/css/style.css";
 import "./assets/theme/css/style.css";
 import "./assets/mobirise/css/mbr-additional.css";
+
 import basis from "./assets/images/basis.jpg";
 import besøgsven from "./assets/images/besøgsven.jpg";
 import sygeplejerske from "./assets/images/sygeplejerske.jpg"
@@ -91,7 +92,7 @@ export default class PriceTypes extends Component {
           <div className="container">
             <div className="media-container-row">
               <div className="plan col-12 mx-2 my-2 justify-content-center col-lg-4">
-                <div className="plan-header text-center pt-5">
+                <div className="plan-header text-left pt-5">
                   <h3 className="plan-title mbr-fonts-style display-5">
                     Basis hjemmehjælp
                   </h3>
@@ -119,9 +120,11 @@ export default class PriceTypes extends Component {
                 </div>
               </div>
               <div className="plan col-12 mx-2 my-2 justify-content-center col-lg-4">
-                <div className="plan-header text-center pt-5">
+                <div className="plan-header text-left pt-5">
                   <h3 className="plan-title mbr-fonts-style display-5">
-                    Besøgsven
+                    Besøgs 
+                    <br/> 
+                    ven
                   </h3>
                   <div className="plan-price">
                     <span className="price-value mbr-fonts-style display-5">
@@ -147,7 +150,7 @@ export default class PriceTypes extends Component {
                 </div>
               </div>
               <div className="plan col-12 mx-2 my-2 justify-content-center col-lg-4">
-                <div className="plan-header text-center pt-5">
+                <div className="plan-header text-left pt-5">
                   <h3 className="plan-title mbr-fonts-style display-5">
                     Sygeplejeske besøg
                   </h3>

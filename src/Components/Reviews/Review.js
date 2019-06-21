@@ -1,16 +1,16 @@
 import React, { Component } from "react";
-import "./assets/web/assets/mobirise-icons/mobirise-icons.css";
-import "./assets/tether/tether.min.css";
-import "./assets/bootstrap/css/bootstrap.min.css";
-import "./assets/bootstrap/css/bootstrap-grid.min.css";
-import "./assets/bootstrap/css/bootstrap-reboot.min.css";
-import "./assets/dropdown/css/style.css";
-import "./assets/theme/css/style.css";
-import "./assets/mobirise/css/mbr-additional.css"; 
-import arnold from "./assets/images/anold-240x240.jpg"
-import dronning from "./assets/images/dronninglol-210x316.jpg"
-import oldmanpic from "./assets/images/oldmanpic-240x319.jpg"
-
+import "../Frontpage/Mobirise Templates/assets/web/assets/mobirise-icons/mobirise-icons.css";
+import "../Frontpage/Mobirise Templates/assets/tether/tether.min.css";
+import "../Frontpage/Mobirise Templates/assets/bootstrap/css/bootstrap.min.css";
+import "../Frontpage/Mobirise Templates/assets/bootstrap/css/bootstrap-grid.min.css";
+import "../Frontpage/Mobirise Templates/assets/bootstrap/css/bootstrap-reboot.min.css";
+import "../Frontpage/Mobirise Templates/assets/dropdown/css/style.css";
+import "../Frontpage/Mobirise Templates/assets/theme/css/style.css";
+import "../Frontpage/Mobirise Templates/assets/mobirise/css/mbr-additional.css"; 
+import arnold from "../Frontpage/Mobirise Templates/assets/images/anold-240x240.jpg"
+import dronning from "../Frontpage/Mobirise Templates/assets/images/dronninglol-210x316.jpg"
+import oldmanpic from "../Frontpage/Mobirise Templates/assets/images/oldmanpic-240x319.jpg"
+// import "../Frontpage/Mobirise Templates/assets/"
 
 
 
@@ -107,7 +107,7 @@ export default class Review extends Component {
                       Margrethe .2
                     </div>
                     <small className="mbr-author-desc mbr-italic mbr-light mbr-fonts-style display-7">
-                      Dronning kunde i 6 år
+                      Dronning og kunde i 6 år
                     </small>
                   </div>
                 </div>
