@@ -7,7 +7,7 @@ export default class Guide extends Component {
       <main className="main">
             <img src={oldman} alt="oldman" className="oldman"/>
         <section className="rules">
-        <h2>Regler i hjemmeplejen</h2>
+        <h2>Regler for hjemmepleje</h2>
             <div className="borger">
               <h5>Borger</h5>
               <p>

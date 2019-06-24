@@ -44,6 +44,18 @@ export default class PlanList extends Component {
   render() {
     return (
       <div>
+        <button style={{margin: 15}}>
+          <Link to={"/create"} style={{ margin: 50 }}>
+            Opret ny
+          </Link>
+        </button>
+
+        <button style={{margin: 15}}>
+          <Link to={"/calender"} style={{ margin: 50 }}>
+            Kalender
+          </Link>
+        </button>
+
         <table className="table table-striped" style={{ marginTop: 20 }}>
           <thead>
             <tr>

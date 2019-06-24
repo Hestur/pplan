@@ -71,8 +71,7 @@ export default class EditPlan extends Component {
         obj
       )
       .then(res => console.log(res.data));
-
-     this.props.history.push("/");
+      window.location.href="http://localhost:3000/list"
   }
 
   render() {

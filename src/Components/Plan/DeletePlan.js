@@ -11,7 +11,7 @@ export default class DeletePlan extends React.Component {
         axios.delete('http://localhost:4000/Plan/delete/'+this.props.match.params.id)
             .then(console.log('Deleted'))
             .catch(err => console.log(err))
-            this.props.history.push("/");
+            window.location.href="http://localhost:3000/list"
     }
 render(){
     return(

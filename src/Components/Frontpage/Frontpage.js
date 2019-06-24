@@ -100,8 +100,8 @@ export default class Frontpage extends React.Component {
                     className="nav-link link text-white display-4"
                     href="http://localhost:3000/reviews"
                   >
-                    <span className="mbri-cust-feedback mbr-iconfont mbr-iconfont-btn" />
-                    Anmeldelser{" "}
+                    <span className="mbri-like mbr-iconfont mbr-iconfont-btn" />
+                    Anmeldelser
                   </a>
                 </li>
                 <li className="nav-item">
@@ -109,7 +109,7 @@ export default class Frontpage extends React.Component {
                     className="nav-link link text-white display-4"
                     href="http://localhost:3000/guide"
                   >
-                    <span className="mbri-like mbr-iconfont mbr-iconfont-btn" />
+                    <span className="mbri-cust-feedback mbr-iconfont mbr-iconfont-btn" />
                     Regler &nbsp; &nbsp;&nbsp;
                   </a>
                 </li>

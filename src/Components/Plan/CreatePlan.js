@@ -66,7 +66,8 @@ export default class CreatePlan extends Component {
     .then(res =>{
       console.log(res.data)
     });
-    this.props.history.push("/");
+    window.location.href="http://localhost:3000/list"
+    
 
     this.setState({
       title: "",
