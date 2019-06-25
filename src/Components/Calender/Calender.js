@@ -59,7 +59,7 @@ onEventClick(event) {
   render() {
     const { events } = this.state;
     return (
-      <div>
+      <div style={{margin: 100}}>
         <BigCalendar
           selectable
           onSelectEvent={event => this.onEventClick(event)}
