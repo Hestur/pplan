@@ -22,7 +22,7 @@ export default class App extends Component{
       <div>
         
         <BrowserRouter>
-<Header/>
+<Header/> 
 <Route exact path="/" component={Frontpage}/>
 <Route path="/reviews" component={Review}/>
 <Route path="/pricing" component={PriceTypes}/>
