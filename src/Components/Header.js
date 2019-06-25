@@ -1,12 +1,10 @@
-import React from 'react';
-
+import React from "react";
 
 export default class Example extends React.Component {
- 
   render() {
     return (
       <div>
-      <section className="menu cid-qTkzRZLJNu" once="menu" id="menu1-0">
+        <section className="menu cid-qTkzRZLJNu" once="menu" id="menu1-0">
           <nav className="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
             <button
               className="navbar-toggler navbar-toggler-right"
@@ -113,7 +111,7 @@ export default class Example extends React.Component {
                     href="http://localhost:3000/pricing"
                   >
                     <span className="mbri-shopping-bag mbr-iconfont mbr-iconfont-btn" />
-                    Vi tilbyder/priser 
+                    Vi tilbyder/priser
                   </a>
                 </li>
               </ul>
