@@ -67,6 +67,7 @@ export default class CreatePlan extends Component {
       console.log(res.data)
     });
     window.location.href="http://localhost:3000/list"
+    alert("Appoinment created");
     
 
     this.setState({
@@ -122,7 +123,7 @@ export default class CreatePlan extends Component {
           <div className="form-group">
             <input
               type="submit"
-              value="Create Todo"
+              value="Create appointment"
               className="btn btn-primary"
             />
           </div>

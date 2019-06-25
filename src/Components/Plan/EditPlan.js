@@ -72,6 +72,7 @@ export default class EditPlan extends Component {
       )
       .then(res => console.log(res.data));
       window.location.href="http://localhost:3000/list"
+      alert("Appointment update successfull")
   }
 
   render() {

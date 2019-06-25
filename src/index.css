@@ -79,7 +79,7 @@ main section {
   font-size: 1.9rem;
 }
 .oldman{
-  height: 700px;
+  height: 800px;
   width: 100%;
 }
 .borger {
@@ -132,22 +132,22 @@ margin: 0px;
 /* Create new appointment --------------- */
 .form-group {
   margin: 40px;
-  padding-right: 1400px;
+  max-width: 500px;
 }
 .pic1{
-  height: 200px;
+  height: 258px;
   width: 500px;
 }
 .pic2{
-  height: 200px;
+  height: 258px;
   width: 350px;
 }
 .pic3{
-  height: 200px;
+  height: 258px;
   width: 550px;
 }
 .pic4{
-  height: 200px;
+  height: 258px;
   width: 500px;
 }
 h3{
