@@ -11,9 +11,11 @@ If not already using node - download it: https://nodejs.org/en/download/
 create new folder (PPlan)
 Place them as follows:
 (PPlan)
+<br>
 :
 :---pplan (project folder)
 :
+<br>
 :---server (server folder)
 
 Once folders are in place
