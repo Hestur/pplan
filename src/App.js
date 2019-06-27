@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import {BrowserRouter, Route} from 'react-router-dom';
 import Header from './Components/Header';
 import CalendarApp from './Components/Calender/Calender';
@@ -17,11 +16,8 @@ import PriceTypes from './Components/Priser/PriceTypes';
 export default class App extends Component{
   render() {
     return (
-      
-    
       <div>
-        
-        <BrowserRouter>
+<BrowserRouter>
 <Header/> 
 <Route exact path="/" component={Frontpage}/>
 <Route path="/reviews" component={Review}/>
@@ -35,7 +31,6 @@ export default class App extends Component{
 <Route path="/map" component={Map}/>
 <Route path="/guide" component={Guide}/>
 </BrowserRouter>
-
       </div>
     );
   }
